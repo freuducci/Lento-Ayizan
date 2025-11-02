@@ -74,11 +74,11 @@
             <div class="absolute bottom-1/3 right-1/4 w-64 h-64 md:w-96 md:h-96 rounded-full bg-gold/5 blur-3xl animate-float-medium pointer-events-none"></div>
             
             <!-- Content Container -->
-            <div class="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24">
+            <div class="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-24">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
                     
-                    <!-- Text Content -->
-                    <div class="text-center lg:text-left space-y-6 md:space-y-8 fade-in">
+                    <!-- Text Content - Always first on mobile, left on desktop -->
+                    <div class="text-center lg:text-left space-y-4 sm:space-y-6 md:space-y-8 fade-in order-1 lg:order-1">
                         <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-canela leading-none">
                             <span class="block text-light tracking-tighter">Lento</span>
                             <span class="block text-gold tracking-tighter">Ayizan</span>
@@ -94,7 +94,7 @@
                             Ati kontanporen ki pale atravè silans ak espas. Nou kreye travay ki rezon ak sansibilite, chak pyès se yon moman poko karefoulman konseve.
                         </p>
                         
-                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start pt-2">
                             <a href="https://shop.lentoayizan.com" 
                                class="group inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 border border-gold/30 text-gold hover:bg-gold/5 hover:border-gold/60 transition-all duration-300 font-medium tracking-tight"
                                aria-label="View Collection">
@@ -111,8 +111,8 @@
                         </div>
                     </div>
 
-                    <!-- Hero Image -->
-                    <div class="relative fade-in order-first lg:order-last">
+                    <!-- Hero Image - Second on mobile, right on desktop -->
+                    <div class="relative fade-in order-2 lg:order-2 mt-8 lg:mt-0">
                         <div class="relative w-full max-w-xl mx-auto aspect-[4/5] rounded-lg overflow-hidden border border-gold/20 group">
                             <div class="absolute inset-0 bg-gradient-to-br from-accent/20 to-dark/80 backdrop-blur-sm pointer-events-none"></div>
                             <div class="absolute inset-0 bg-noise opacity-10 pointer-events-none"></div>
@@ -177,7 +177,7 @@
                     Magazen Nou
                 </h2>
                 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
                     
                     <!-- Product 1 -->
                     <article class="product-card fade-in">
@@ -188,10 +188,10 @@
                                  loading="lazy">
                             <div class="absolute inset-0 bg-noise opacity-10 pointer-events-none"></div>
                             <div class="product-overlay">
-                                <h3 class="text-lg sm:text-xl font-medium text-light mb-2">Seri Monokrom</h3>
-                                <p class="text-sm text-gray mb-2">Imprimasyon ak likid metal</p>
-                                <p class="text-gold text-lg sm:text-xl mb-4">$1,200</p>
-                                <a href="#" class="inline-block px-4 sm:px-6 py-2 sm:py-3 bg-gold text-dark hover:bg-gold/90 transition-colors duration-300 text-sm sm:text-base" aria-label="Purchase Seri Monokrom">
+                                <h3 class="text-sm sm:text-base md:text-lg lg:text-xl font-medium text-light mb-1 sm:mb-2">Seri Monokrom</h3>
+                                <p class="text-xs sm:text-sm text-gray mb-1 sm:mb-2">Imprimasyon ak likid metal</p>
+                                <p class="text-gold text-base sm:text-lg md:text-xl mb-2 sm:mb-4">$1,200</p>
+                                <a href="#" class="inline-block px-3 sm:px-4 md:px-6 py-2 sm:py-2 md:py-3 bg-gold text-dark hover:bg-gold/90 transition-colors duration-300 text-xs sm:text-sm md:text-base" aria-label="Purchase Seri Monokrom">
                                     Achte
                                 </a>
                             </div>
@@ -207,10 +207,10 @@
                                  loading="lazy">
                             <div class="absolute inset-0 bg-noise opacity-10 pointer-events-none"></div>
                             <div class="product-overlay">
-                                <h3 class="text-lg sm:text-xl font-medium text-light mb-2">Vazo Tèrakòt</h3>
-                                <p class="text-sm text-gray mb-2">Fè men ak tè natirèl</p>
-                                <p class="text-gold text-lg sm:text-xl mb-4">$850</p>
-                                <a href="#" class="inline-block px-4 sm:px-6 py-2 sm:py-3 bg-gold text-dark hover:bg-gold/90 transition-colors duration-300 text-sm sm:text-base" aria-label="Purchase Vazo Tèrakòt">
+                                <h3 class="text-sm sm:text-base md:text-lg lg:text-xl font-medium text-light mb-1 sm:mb-2">Vazo Tèrakòt</h3>
+                                <p class="text-xs sm:text-sm text-gray mb-1 sm:mb-2">Fè men ak tè natirèl</p>
+                                <p class="text-gold text-base sm:text-lg md:text-xl mb-2 sm:mb-4">$850</p>
+                                <a href="#" class="inline-block px-3 sm:px-4 md:px-6 py-2 sm:py-2 md:py-3 bg-gold text-dark hover:bg-gold/90 transition-colors duration-300 text-xs sm:text-sm md:text-base" aria-label="Purchase Vazo Tèrakòt">
                                     Achte
                                 </a>
                             </div>
@@ -226,10 +226,10 @@
                                  loading="lazy">
                             <div class="absolute inset-0 bg-noise opacity-10 pointer-events-none"></div>
                             <div class="product-overlay">
-                                <h3 class="text-lg sm:text-xl font-medium text-light mb-2">Etid Silans</h3>
-                                <p class="text-sm text-gray mb-2">Desen an krèyon ak chabon</p>
-                                <p class="text-gold text-lg sm:text-xl mb-4">$650</p>
-                                <a href="#" class="inline-block px-4 sm:px-6 py-2 sm:py-3 bg-gold text-dark hover:bg-gold/90 transition-colors duration-300 text-sm sm:text-base" aria-label="Purchase Etid Silans">
+                                <h3 class="text-sm sm:text-base md:text-lg lg:text-xl font-medium text-light mb-1 sm:mb-2">Etid Silans</h3>
+                                <p class="text-xs sm:text-sm text-gray mb-1 sm:mb-2">Desen an krèyon ak chabon</p>
+                                <p class="text-gold text-base sm:text-lg md:text-xl mb-2 sm:mb-4">$650</p>
+                                <a href="#" class="inline-block px-3 sm:px-4 md:px-6 py-2 sm:py-2 md:py-3 bg-gold text-dark hover:bg-gold/90 transition-colors duration-300 text-xs sm:text-sm md:text-base" aria-label="Purchase Etid Silans">
                                     Achte
                                 </a>
                             </div>
@@ -245,10 +245,10 @@
                                  loading="lazy">
                             <div class="absolute inset-0 bg-noise opacity-10 pointer-events-none"></div>
                             <div class="product-overlay">
-                                <h3 class="text-lg sm:text-xl font-medium text-light mb-2">Asanble Metalik</h3>
-                                <p class="text-sm text-gray mb-2">Sculpture an fè ak kwiv</p>
-                                <p class="text-gold text-lg sm:text-xl mb-4">$1,800</p>
-                                <a href="#" class="inline-block px-4 sm:px-6 py-2 sm:py-3 bg-gold text-dark hover:bg-gold/90 transition-colors duration-300 text-sm sm:text-base" aria-label="Purchase Asanble Metalik">
+                                <h3 class="text-sm sm:text-base md:text-lg lg:text-xl font-medium text-light mb-1 sm:mb-2">Asanble Metalik</h3>
+                                <p class="text-xs sm:text-sm text-gray mb-1 sm:mb-2">Sculpture an fè ak kwiv</p>
+                                <p class="text-gold text-base sm:text-lg md:text-xl mb-2 sm:mb-4">$1,800</p>
+                                <a href="#" class="inline-block px-3 sm:px-4 md:px-6 py-2 sm:py-2 md:py-3 bg-gold text-dark hover:bg-gold/90 transition-colors duration-300 text-xs sm:text-sm md:text-base" aria-label="Purchase Asanble Metalik">
                                     Achte
                                 </a>
                             </div>
