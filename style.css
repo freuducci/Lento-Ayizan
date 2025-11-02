@@ -165,8 +165,8 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, rgba(14, 14, 14, 0.95), transparent);
-  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(14, 14, 14, 0.95), rgba(14, 14, 14, 0.7) 70%, transparent);
+  padding: 1rem;
   color: white;
   transform: translateY(100%);
   transition: transform var(--transition-fast) ease;
@@ -177,11 +177,28 @@ img {
   transform: translateY(0);
 }
 
-/* Mobile adjustments for product cards */
+/* Mobile adjustments for product cards - 2 column layout */
 @media (max-width: 640px) {
   .product-overlay {
     transform: translateY(0);
-    background: linear-gradient(to top, rgba(14, 14, 14, 0.9) 60%, transparent);
+    background: linear-gradient(to top, rgba(14, 14, 14, 0.95) 50%, rgba(14, 14, 14, 0.5) 80%, transparent);
+    padding: 0.75rem;
+  }
+  
+  .product-card:active {
+    transform: scale(0.98);
+  }
+  
+  /* Ensure cards maintain aspect ratio on small screens */
+  .product-card {
+    min-width: 0; /* Prevent flex overflow */
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 641px) and (max-width: 768px) {
+  .product-overlay {
+    padding: 1.25rem;
   }
 }
 
